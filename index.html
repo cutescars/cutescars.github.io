@@ -154,7 +154,17 @@
       </a>
     </div>
   </div>
+  <script>
+    function startMedia() {
+      document.getElementById('overlay').style.display = 'none';
+      const video = document.getElementById('bg-video');
+      video.style.display = 'block';
+      video.play().catch(error => console.log("Autoplay blocked:", error));
+    }
+  </script>
 
+</body>
+</html>
   <script>
     function startMedia() {
       let video = document.getElementById("video");
